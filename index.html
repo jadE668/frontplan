@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="plan">
+            <img  width="1000" height="194" src="images/4floor(crop).png" alt="">
+            <canvas id="canvas" width="1000" height="194"> </canvas>
+        </div>
+    </div>
+
+    <script>
+        let canv = document.getElementById('canvas')
+        let ctx = canv.getContext('2d')
+
+        canv.addEventListener("click", function (event){
+            let x = event.offsetX
+            let y = event.offsetY
+
+            ctx.fillStyle = 'red';
+            ctx.beginPath();
+            ctx.arc(x, y, 5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.stroke();
+        })
+
+    </script>
+</body>
+</html>

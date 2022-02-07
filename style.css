@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*.outer{
+    display: flex;
+    height: 100vh;
+}*/
+
+.plan{
+    /*margin:0 auto;
+    max-height: 1080px;*/
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 194px;
+}
+
+.plan img{
+    /*position: absolute;*/
+}
+
+/*.plan img{
+    z-index: 1;
+}*/
+
+#canvas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    width: 1000px;
+    height: 194px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
