@@ -6,37 +6,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="outer">
-        <div class="plan">
-            <img  width="1000" height="194" src="images/4floor(crop).png" alt="">
-            <canvas id="canvas" width="1000" height="194"> </canvas>
-        </div>
+<div class="outer">
+    <div class="plan">
+        <img width="1000" height="194" src="images/4floor(crop).png" alt="">
+        <canvas id="canvas" width="1000" height="194"></canvas>
     </div>
+</div>
 
-    <script>
-        let canv = document.getElementById('canvas')
-        let ctx = canv.getContext('2d')
+<script>
+    let canv = document.getElementById('canvas')
+    let ctx = canv.getContext('2d')
 
-        let state = {};
+    let state = {};
 
-        canv.addEventListener("click", function (event){
-            let x = event.offsetX
-            let y = event.offsetY
+    canv.addEventListener("click", function (event) {
+        let x = event.offsetX
+        let y = event.offsetY
 
-            if (!state.points){
-                state.points = [];
-            }
-            state.points.push({x, y});
+        if (!state.points) {
+            state.points = [];
+        }
+        state.points.push({x, y});
 
-            console.log(state.points)
+        console.log(state.points)
 
-            ctx.fillStyle = 'red';
-            ctx.beginPath();
-            ctx.arc(x, y, 2, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.stroke();
-        })
+        ctx.fillStyle = 'red';
+        ctx.beginPath();
+        ctx.arc(x, y, 2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.stroke();
+    })
 
-    </script>
+</script>
 </body>
 </html>
