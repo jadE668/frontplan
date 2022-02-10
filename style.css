@@ -9,10 +9,8 @@ body{
 }*/
 
 .plan{
-    /*margin:0 auto;
-    max-height: 1080px;*/
-    position: absolute;
     display: inline-block;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -20,9 +18,23 @@ body{
     height: 194px;
 }
 
-.plan img{
-    /*position: absolute;*/
+.img.active{
+    display: block;
 }
+
+.img{
+    display: none;
+}
+
+/*.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+
+
 
 /*.plan img{
     z-index: 1;
@@ -38,5 +50,32 @@ body{
     height: 194px;
     border: 1px solid red;
     box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btns{
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.btn{
+    margin: 0 30px;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    background-color: darksalmon;
+    transition: background-color 0.1s linear;
+}
+
+.btn.active{
+    background-color: black;
+    color: white;
+    border-bottom: 4px solid darksalmon;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
 }
 
