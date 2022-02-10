@@ -3,10 +3,10 @@ body{
     padding: 0;
 }
 
-/*.outer{
-    display: flex;
-    height: 100vh;
-}*/
+h1{
+    margin-top: 40px;
+    text-align: center;
+}
 
 .plan{
     display: inline-block;
@@ -25,20 +25,6 @@ body{
 .img{
     display: none;
 }
-
-/*.image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
-
-
-
-
-/*.plan img{
-    z-index: 1;
-}*/
 
 #canvas{
     position: absolute;
